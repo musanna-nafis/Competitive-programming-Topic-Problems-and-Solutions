@@ -96,7 +96,7 @@ void build()
 }
 int lca(int u, int v)
 {
-    if(u<v) swap(u,v);
+    if(level[u]<level[v]) swap(u,v);
     int lg1=log2(level[u]+2);
     for(int i=lg1;i>=0;i--)
     {
